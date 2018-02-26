@@ -40,7 +40,7 @@ public class UDPClient extends Thread{
             targetAddress = InetAddress.getByAddress(address);
         }
         catch(ArrayIndexOutOfBoundsException | UnknownHostException e){
-            //JOptionPane.showMessageDialog(null, "The target IP address you entered in invalid, please close the program and enter a valid one", "Invalid Input", JOptionPane.INFORMATION_MESSAGE);
+            UDPGUI.outputText.setText("The target IP address you entered in invalid, please close the program and enter a valid one");
         }
     }
         public void run(){
